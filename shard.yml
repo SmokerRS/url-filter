@@ -4,4 +4,7 @@ version: 0.1.0
 authors:
   - Luc Sarzyniec <devel@olbat.net>
 
+description: |
+  Filter list of URLs using rules based on URL fields and regex
+
 license: GPLv3

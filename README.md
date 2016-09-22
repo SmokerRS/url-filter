@@ -1,6 +1,6 @@
-# url_filter
+# url-filter
 
-TODO: Write a description here
+Filter list of URLs using rules based on URL fields and regex
 
 ## Installation
 
