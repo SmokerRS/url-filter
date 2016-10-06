@@ -11,8 +11,11 @@ struct URLFilter::Filter
   end
 
   def optimize!
-    @rules.reject{|rule| rule.size <= 0 }
+    # remove empty and duplicated rules
+    @rules.reject!{|rule| rule.size <= 0 }
+    @rules.uniq!
 
+    # aggregate regex of similar rules
     common_rules = {} of String => Array(Regex)
     @rules.dup.each do |rule|
       if rule.size == 1

@@ -42,6 +42,12 @@ struct URLFilter::Rule
         {{name.id}}: {type: Regex, nilable: true, converter: JSONRegexParser},
       {% end %}
     )
+
+    def_equals_and_hash(
+      {% for name in URI_FIELDS %}
+        {{name}}, @{{name.id}}.try(&.source),
+      {% end %}
+    )
   {% end %}
 
   def each
