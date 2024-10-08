@@ -1,6 +1,6 @@
 # url-filter
 
-Filter list of URLs using rules based on URL fields and regex
+Filter list of URLs using rules based on URL fields and re
 
 ## Installation
 
@@ -28,4 +28,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [[olbat]](https://github.com/olbat)  - creator, maintainer
+- [[olbat]](https://github.com/olbat)  - creator, 
